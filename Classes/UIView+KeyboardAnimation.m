@@ -22,23 +22,23 @@
   
 }
 
-- (void)setViewWillAppearObserver:(id<NSObject>)viewWillAppearObserver {
-  objc_setAssociatedObject(self, @selector(viewWillAppearObserver), viewWillAppearObserver, OBJC_ASSOCIATION_ASSIGN);
+- (void)setKba_viewWillAppearObserver:(id<NSObject>)viewWillAppearObserver {
+  objc_setAssociatedObject(self, @selector(kba_viewWillAppearObserver), viewWillAppearObserver, OBJC_ASSOCIATION_ASSIGN);
 }
 
-- (id<NSObject>)viewWillAppearObserver {
+- (id<NSObject>)kba_viewWillAppearObserver {
   return objc_getAssociatedObject(self, _cmd);
 }
 
-- (id<NSObject>)viewWillDisappearObserver {
+- (id<NSObject>)kba_viewWillDisappearObserver {
   return objc_getAssociatedObject(self, _cmd);
 }
 
-- (void)setViewWillDisappearObserver:(id<NSObject>)viewWillDisappearObserver {
-  objc_setAssociatedObject(self, @selector(viewWillDisappearObserver), viewWillDisappearObserver, OBJC_ASSOCIATION_ASSIGN);
+- (void)setKba_viewWillDisappearObserver:(id<NSObject>)viewWillDisappearObserver {
+  objc_setAssociatedObject(self, @selector(kba_viewWillDisappearObserver), viewWillDisappearObserver, OBJC_ASSOCIATION_ASSIGN);
 }
 
-- (UIViewController *)viewController {
+- (UIViewController *)kba_viewController {
   
   UIResponder *nextResponder = [self nextResponder];
   
@@ -74,22 +74,22 @@
     
   KBA_REGISTER_ACTION
     
-  self.viewWillAppearObserver =  [[NSNotificationCenter defaultCenter] addObserverForName:@"keyboardAnimation_viewWillAppear"
+  self.kba_viewWillDisappearObserver =  [[NSNotificationCenter defaultCenter] addObserverForName:@"keyboardAnimation_viewWillAppear"
                                                       object:nil
                                                        queue:[NSOperationQueue mainQueue]
                                                   usingBlock:^(NSNotification * _Nonnull note) {
-                                                    if (note.object != [self viewController]) {
+                                                    if (note.object != [self kba_viewController]) {
                                                       return;
                                                     }
                                                     KBA_REGISTER_ACTION
                                                     
     }];
     
-   self.viewWillDisappearObserver = [[NSNotificationCenter defaultCenter] addObserverForName:@"keyboardAnimation_viewWillDisappear"
+   self.kba_viewWillDisappearObserver = [[NSNotificationCenter defaultCenter] addObserverForName:@"keyboardAnimation_viewWillDisappear"
                                                       object:nil
                                                        queue:[NSOperationQueue mainQueue]
                                                   usingBlock:^(NSNotification * _Nonnull note) {
-                                                    if (note.object != [self viewController]) {
+                                                    if (note.object != [self kba_viewController]) {
                                                       return;
                                                     }
                                                     [self kba_clear];
@@ -99,9 +99,9 @@
 
 - (void)kba_dealloc {
   
-  [[NSNotificationCenter defaultCenter] removeObserver:self.viewWillAppearObserver];
+  [[NSNotificationCenter defaultCenter] removeObserver:self.kba_viewWillAppearObserver];
   
-  [[NSNotificationCenter defaultCenter] removeObserver:self.viewWillDisappearObserver];
+  [[NSNotificationCenter defaultCenter] removeObserver:self.kba_viewWillDisappearObserver];
   
 }
 

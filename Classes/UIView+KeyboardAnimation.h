@@ -10,6 +10,4 @@
 
 @interface UIView (KeyboardAnimation)
 
-@property(nonatomic, weak, readonly) UIViewController *viewController;
-
 @end
