@@ -41,7 +41,7 @@ static void *KeyboardAnimationCompleteBlockKey = @"kba_KeyboardAnimationComplete
   if ([self kba_hasRegisterKeyboardNotification]) {
     return;
   }
-  [self setKba_hasRegisterKeyboardNotification:@(YES)];
+  self.kba_hasRegisterKeyboardNotification = YES;
   [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(kba_willShow:) name:UIKeyboardWillShowNotification object:nil];
   
   [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(kba_willHidden:) name:UIKeyboardWillHideNotification object:nil];
@@ -103,7 +103,7 @@ static void *KeyboardAnimationCompleteBlockKey = @"kba_KeyboardAnimationComplete
 }
 
 - (void)kba_clear {
-  [self setKba_hasRegisterKeyboardNotification:@(NO)];
+  self.kba_hasRegisterKeyboardNotification = NO;
   objc_setAssociatedObject(self, KeyboardAnimationWillStartBlockKey, nil, OBJC_ASSOCIATION_COPY_NONATOMIC);
   objc_setAssociatedObject(self, KeyboardAnimationBlockKey, nil, OBJC_ASSOCIATION_COPY_NONATOMIC);
   objc_setAssociatedObject(self, KeyboardAnimationCompleteBlockKey, nil, OBJC_ASSOCIATION_COPY_NONATOMIC);
