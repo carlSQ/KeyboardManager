@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B7268921E486412009704E0 /* KeyboardManager.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 1B72688F1E486412009704E0 /* KeyboardManager.podspec */; };
+		1B7268931E486412009704E0 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 1B7268901E486412009704E0 /* LICENSE */; };
+		1B7268941E486412009704E0 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 1B7268911E486412009704E0 /* README.md */; };
 		1B830C181E2F44F70058F2EF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B830C171E2F44F70058F2EF /* main.m */; };
 		1B830C1B1E2F44F70058F2EF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B830C1A1E2F44F70058F2EF /* AppDelegate.m */; };
 		1B830C1E1E2F44F70058F2EF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B830C1D1E2F44F70058F2EF /* ViewController.m */; };
@@ -38,6 +41,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1B72688F1E486412009704E0 /* KeyboardManager.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = KeyboardManager.podspec; sourceTree = "<group>"; };
+		1B7268901E486412009704E0 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		1B7268911E486412009704E0 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		1B830C131E2F44F70058F2EF /* KeyboardManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeyboardManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B830C171E2F44F70058F2EF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1B830C191E2F44F70058F2EF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -87,9 +93,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B72688E1E486412009704E0 /* Podspec MetaData */ = {
+			isa = PBXGroup;
+			children = (
+				1B72688F1E486412009704E0 /* KeyboardManager.podspec */,
+				1B7268901E486412009704E0 /* LICENSE */,
+				1B7268911E486412009704E0 /* README.md */,
+			);
+			path = "Podspec MetaData";
+			sourceTree = "<group>";
+		};
 		1B830C0A1E2F44F70058F2EF = {
 			isa = PBXGroup;
 			children = (
+				1B72688E1E486412009704E0 /* Podspec MetaData */,
 				1B830C491E2F454A0058F2EF /* Classes */,
 				1B830C151E2F44F70058F2EF /* KeyboardManager */,
 				1B830C2F1E2F44F80058F2EF /* KeyboardManagerTests */,
@@ -275,6 +292,8 @@
 				1B830C261E2F44F70058F2EF /* LaunchScreen.storyboard in Resources */,
 				1B830C231E2F44F70058F2EF /* Assets.xcassets in Resources */,
 				1B830C211E2F44F70058F2EF /* Main.storyboard in Resources */,
+				1B7268921E486412009704E0 /* KeyboardManager.podspec in Resources */,
+				1B7268931E486412009704E0 /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +321,7 @@
 				1B830C1E1E2F44F70058F2EF /* ViewController.m in Sources */,
 				1B830C4C1E2F454A0058F2EF /* UIViewController+KeyboardAnimation.m in Sources */,
 				1B830C1B1E2F44F70058F2EF /* AppDelegate.m in Sources */,
+				1B7268941E486412009704E0 /* README.md in Sources */,
 				1B830C181E2F44F70058F2EF /* main.m in Sources */,
 				1B830C551E30BA4A0058F2EF /* UIView+KeyboardAnimation.m in Sources */,
 				1B830C521E309A400058F2EF /* NSObject+KeyboardAnimation.m in Sources */,

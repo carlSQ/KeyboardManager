@@ -103,6 +103,7 @@
   
   [[NSNotificationCenter defaultCenter] removeObserver:self.kba_viewWillDisappearObserver];
   
+  [self kba_dealloc];
 }
 
 @end
