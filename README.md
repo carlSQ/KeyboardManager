@@ -1,6 +1,6 @@
-# CSSLayout
+# KeyboardManager
 
-[![CI Status](http://img.shields.io/travis/carlSQ/CSSLayout.svg?style=flat)](https://travis-ci.org/carlSQ/KeyboardManager)
+[![CI Status](http://img.shields.io/travis/carlSQ/KeyboardManager.svg?style=flat)](https://travis-ci.org/carlSQ/KeyboardManager)
 [![Version](https://img.shields.io/cocoapods/v/KeyboardManager.svg?style=flat)](http://cocoapods.org/pods/KeyboardManager)
 [![License](https://img.shields.io/cocoapods/l/KeyboardManager.svg?style=flat)](http://cocoapods.org/pods/KeyboardManager)
 [![Platform](https://img.shields.io/cocoapods/p/KeyboardManager.svg?style=flat)](http://cocoapods.org/pods/KeyboardManager)
